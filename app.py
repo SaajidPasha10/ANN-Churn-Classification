@@ -62,9 +62,9 @@ def process_data(my_dict,input_data):
     prob = round(predicted_probab[0][0],2) * 100
     st.write(f"Probability of staying {prob:.2f} %")
     if predicted_probab > 0.5:
-        st.write("Customer is likely to stay in the bank")
+        st.write("Customer is likely to leave the bank")
     else:
-        st.write("Customer is likely to leave the bank!")
+        st.write("Customer is likely to stay in the bank!")
 
 
 def main():
