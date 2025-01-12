@@ -1,4 +1,4 @@
-import pickle 
+    import pickle 
 import streamlit as st
 import numpy as np
 import tensorflow as tf
@@ -60,7 +60,7 @@ def process_data(my_dict,input_data):
     scaled_df = my_dict['stand_scaler'].transform(transformed_df)
     predicted_probab = my_dict["model"].predict(scaled_df)
     prob = round(predicted_probab[0][0],2) * 100
-    st.write(f"Probability of staying {prob} %")
+    st.write(f"Probability of staying {prob:.2f} %")
     if predicted_probab > 0.5:
         st.write("Customer is likely to stay in the bank")
     else:
