@@ -1,6 +1,8 @@
-tensorflow
-streamlit
-numpy
-pandas
+tensorflow==2.17.0
+pandas 
+numpy 
 scikit-learn
-pickle
+tensorboard
+matplotlib
+streamlit
+scikeras
